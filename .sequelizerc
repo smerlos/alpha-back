@@ -1,0 +1,11 @@
+const path = require('path');
+
+const libDirectory = path.resolve(__dirname, 'lib')
+const databaseDirectory = path.resolve(libDirectory, 'database')
+
+module.exports = {
+  config: path.resolve(libDirectory, 'config', 'database.js'),
+  'models-path': path.resolve(databaseDirectory, 'models'),
+  'seeders-path': path.resolve(databaseDirectory, 'migrations'),
+  'migrations-path': path.resolve(databaseDirectory, 'migrations'),
+};

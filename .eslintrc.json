@@ -1,0 +1,22 @@
+ {
+  "env": {
+      "commonjs": true,
+      "es2022": true,
+      "node": true
+  },
+  "extends": [
+      "standard",
+      "plugin:security/recommended",
+      "plugin:sonarjs/recommended"
+  ],
+  "plugins": [
+    "sonarjs",
+    "unicorn"
+  ],
+  "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+  },
+  "rules": {
+  }
+}
